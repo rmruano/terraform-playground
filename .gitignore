@@ -1,4 +1,4 @@
-/.git
-/.terraform*
+.git
+.terraform*
 *.tfstate*
 *.log
