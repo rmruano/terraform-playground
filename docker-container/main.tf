@@ -14,11 +14,20 @@ resource "docker_image" "nginx" {
   keep_locally = false
 }
 
-resource "docker_container" "nginx" {
+resource "docker_container" "nginx1" {
   image = docker_image.nginx.latest
-  name  = "tutorial"
+  name  = "tutorial_1"
   ports {
     internal = 80
     external = 8000
+  }
+}
+
+resource "docker_container" "nginx2" {
+  image = docker_image.nginx.latest
+  name  = "tutorial_2"
+  ports {
+    internal = 80
+    external = 8001
   }
 }
