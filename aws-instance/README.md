@@ -1,3 +1,5 @@
+** Sample EC2 instance provisioning with terraform cloud
+
 *This is a remote project, it requires a terraform cloud account. Remove the remote configuration from the main.tf file if you want to run it locally*
 
 1. Provide your terraform cloud auth-token by running `terraform login` (not needed if you provide a token in the next step)
