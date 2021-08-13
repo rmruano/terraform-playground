@@ -8,7 +8,7 @@ resource "random_id" "id" {
 
 # Create a name with a randomized value
 locals {
-    name =  "{$var.name}-${random_id.id.hex}"
+    name =  "${var.name}-${random_id.id.hex}"
     tags = {
         Name = local.name
     }

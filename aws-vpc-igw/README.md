@@ -1,4 +1,4 @@
-** Sample VPC provisioning
+# Sample AWS VPC provisioning
 
 Creates a sample VPC with 2 subnets in different availability zones.
 
